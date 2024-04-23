@@ -1,0 +1,8 @@
+<macro name="switchbot press" icon="DOWNLOAD">
+   <assert-service description="Ensure CBA20D00-224D-11E6-9FB8-0002A5D5C51B service" uuid="CBA20D00-224D-11E6-9FB8-0002A5D5C51B">
+      <assert-characteristic description="Ensure CBA20D00-224D-11E6-9FB8-0002A5D5C51B characteristic" uuid="CBA20D00-224D-11E6-9FB8-0002A5D5C51B">
+         <property name="WRITE" requirement="MANDATORY"/>
+      </assert-characteristic>
+   </assert-service>
+   <write description="Write 0x570100 to CBA20D00-224D-11E6-9FB8-0002A5D5C51B" characteristic-uuid="CBA20D00-224D-11E6-9FB8-0002A5D5C51B" service-uuid="CBA20D00-224D-11E6-9FB8-0002A5D5C51B" value="570100" type="WRITE_COMMAND"/>
+</macro>
